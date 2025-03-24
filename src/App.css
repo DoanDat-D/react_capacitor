@@ -1,0 +1,133 @@
+/* Cấu trúc tổng thể */
+body {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #d5edf8, #98c8c7);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Hộp chứa chính */
+.container {
+  max-width: 430px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tiêu đề */
+h1 {
+  color: #6a1b9a;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Ô nhập liệu */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #ab47bc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #8e24aa;
+  box-shadow: 0px 0px 10px rgba(142, 36, 170, 0.4);
+}
+
+/* Nút bấm */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Nút tính BMI */
+.calculate-btn {
+  background: #7b1fa2;
+  color: rgb(144, 217, 159);
+}
+
+.calculate-btn:hover {
+  background: #6a1b9a;
+  transform: scale(1.05);
+}
+
+/* Kết quả BMI */
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a148c;
+  padding: 14px;
+  background: #f3e5f5;
+  border-radius: 10px;
+}
+
+/* Nhóm nút bấm */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.button-group button {
+  flex: 1;
+  margin: 5px;
+}
+
+/* Nút chia sẻ */
+.share-btn {
+  background: #43a047;
+  color: white;
+}
+
+.share-btn:hover {
+  background: #388e3c;
+}
+
+/* Nút chụp ảnh */
+.camera-btn {
+  background: #ff7043;
+  color: white;
+}
+
+.camera-btn:hover {
+  background: #f4511e;
+}
+
+/* Ảnh chụp */
+.photo {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
